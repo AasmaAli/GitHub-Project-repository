@@ -142,9 +142,8 @@ def time_stats(df, month , day):
     df['Start Time'] = pd.to_datetime(df['Start Time'], errors='coerce')
     df['hour'] = df['Start Time'].dt.hour
     Mosthour = df['hour'].value_counts().idxmax()
-    df.drop('hour', axis=1, inplace=True)
     print('\nThe most common start hour  %s ' % Mosthour )
-
+    df.drop('hour', axis=1, inplace=True)
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -208,14 +207,10 @@ def user_stats(df, city):
     # TO DO: Display counts of gender
     print('\nCounts of user Gender\n')
     print(df['Gender'].value_counts())
-
-
     # TO DO: Display earliest, most recent, and most common year of birth
     print("\nEarliest year of birth for users %s " % df['Birth Year'].min() )
     print("\nMost recent of birth for users %s " % df['Birth Year'].max() )
-    print("\nMost common year of birth for users %s " % df['Birth Year'].mean() )
-    
-    
+    print("\nMost common year of birth for users %s " % df['Birth Year'].mean() )   
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -228,6 +223,7 @@ def  Row_Data(df):
         start = start + 5
         end = end +5
         restart = input('\nWould you like to see more row data? Enter yes or no.\n')
+
            
     
     
