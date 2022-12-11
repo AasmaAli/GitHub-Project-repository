@@ -3,22 +3,20 @@
 ### Date created
 Include the date you created this project and README file.
 
-### Project Title
+Project Title
 Replace the Project Title
 
-### Description
+Description
 Describe what your project is about and what it does
 
-### Files used
-Include the files used
-for deco and code:
-bikeshare.py
-text.txt
+Files used
+Include the files used for deco and code: bikeshare.py text.txt
 
-for data:
-chicago.csv
-washington.csv
-new_york_city.csv
+for data: chicago.csv washington.csv new_york_city.csv
+
+Credits
+https://stackoverflow.com/
+https://www.javatpoint.com/git-status
 
 ### Credits
 https://stackoverflow.com/

@@ -24,7 +24,7 @@ def get_filters():
     city = input("Please choose any city data you want chicago, new york city or Washington? ")
      
     while city.lower() not in listcity:
-        city = input("try again please with the same spelling of city ")
+        city = input("try again please with the same spelling of city (chicago, new york city or Washington) ")
 
     # TO DO: get user input for filter the date 
     month =0
@@ -243,6 +243,7 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
+            print("Thank you")
             break
 
 
